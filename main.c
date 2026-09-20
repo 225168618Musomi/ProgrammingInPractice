@@ -8,7 +8,7 @@ int main()
     printf("Enter Municipality Name: ");
     fgets(municipality, sizeof(municipality), stdin);
 
-    // Remove the newline character added by fgets()
+    
     municipality[strcspn(municipality, "\n")] = '\0';
 
     printf("Municipality: %s\n", municipality);
